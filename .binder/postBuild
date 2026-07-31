@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -euo pipefail
+
+# download example data
+
+curl --output data.zip -L 'https://www.dropbox.com/scl/fi/b26b99aygij1ahsidzfds/Quantiative-Analysis-Data.zip?rlkey=ms6bs9anwujyhrtu2m8572mwc&st=gdv0kj4l&dl=1'
+unzip data.zip -x / -d data
+rm -rf data/__MACOSX data.zip
